@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: liberary
+  name: racexsgvn
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "liberary"
+  - name: "racexsgvn"
     port: 8080
   selector:
-    app: liberary
+    app: racexsgvn
