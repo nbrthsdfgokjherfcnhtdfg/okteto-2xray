@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: racexsgvn
+  name: heriuom
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: racexsgvn
+      app: heriuom
   template:
     metadata:
       labels:
-        app: racexsgvn
+        app: heriuom
     spec:
       containers:
-      - image: okteto.dev/racexsgvn:latest
-        name: racexsgvn
+      - image: okteto.dev/heriuom:latest
+        name: heriuom
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "freemp3cloud.com"
+          value: "www.anime-planet.com"
         - name: Vless_UUID
-          value: "d0d6652d-f213-467f-a089-eddc613b9a8d"
+          value: "dbf1d0d5-6ee5-4e9a-81cb-2098ceb24a48"
         - name: Vless_Path
-          value: "/weud45y"
+          value: "/avplkrgh"
         - name: Vmess_UUID
-          value: "d0d6652d-f213-467f-a089-eddc613b9a8d"
+          value: "dbf1d0d5-6ee5-4e9a-81cb-2098ceb24a48"
         - name: Vmess_Path
-          value: "/hnirf5wt"
+          value: "/PREXCSZ"
         - name: Share_Path
-          value: "/Share342"
+          value: "/Share615"
