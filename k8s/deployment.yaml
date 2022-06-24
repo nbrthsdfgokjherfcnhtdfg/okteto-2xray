@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: liberary
+  name: racexsgvn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: liberary
+      app: racexsgvn
   template:
     metadata:
       labels:
-        app: liberary
+        app: racexsgvn
     spec:
       containers:
-      - image: okteto.dev/liberary:latest
-        name: liberary
+      - image: okteto.dev/racexsgvn:latest
+        name: racexsgvn
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mp3-juice.com"
+          value: "freemp3cloud.com"
         - name: Vless_UUID
-          value: "782b0a36-ae13-4bc8-b7d2-31bf9acf1ae8"
+          value: "d0d6652d-f213-467f-a089-eddc613b9a8d"
         - name: Vless_Path
-          value: "/YT87DI3W"
+          value: "/weud45y"
         - name: Vmess_UUID
-          value: "782b0a36-ae13-4bc8-b7d2-31bf9acf1ae8"
+          value: "d0d6652d-f213-467f-a089-eddc613b9a8d"
         - name: Vmess_Path
-          value: "/SDKJH4ty"
+          value: "/hnirf5wt"
         - name: Share_Path
-          value: "/Share302"
+          value: "/Share342"
