@@ -7,8 +7,7 @@ fi
 echo ${VER}
 
 if [[ -z "${Vless_Path}" ]]; then
-  Vless_Path="/avplkrgh
-"
+  Vless_Path="/avplkrgh"
 fi
 echo ${Vless_Path}
 
