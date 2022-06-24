@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afvbhyjiklm
+  name: liberary
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: afvbhyjiklm
+      app: liberary
   template:
     metadata:
       labels:
-        app: afvbhyjiklm
+        app: liberary
     spec:
       containers:
-      - image: okteto.dev/afvbhyjiklm:latest
-        name: afvbhyjiklm
+      - image: okteto.dev/liberary:latest
+        name: liberary
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.freemusicarchive.org"
+          value: "mp3-juice.com"
         - name: Vless_UUID
-          value: "369d13fc-14d7-4b30-8240-33c59e3c477d"
+          value: "782b0a36-ae13-4bc8-b7d2-31bf9acf1ae8"
         - name: Vless_Path
-          value: "/VOIF9RT"
+          value: "/YT87DI3W"
         - name: Vmess_UUID
-          value: "369d13fc-14d7-4b30-8240-33c59e3c477d"
+          value: "782b0a36-ae13-4bc8-b7d2-31bf9acf1ae8"
         - name: Vmess_Path
-          value: "/adrg7twe"
+          value: "/SDKJH4ty"
         - name: Share_Path
-          value: "/Share176"
+          value: "/Share302"
