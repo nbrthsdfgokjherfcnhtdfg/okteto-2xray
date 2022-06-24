@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: heriuom
+  name: huaernmo
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "heriuom"
+  - name: "huaernmo"
     port: 8080
   selector:
-    app: heriuom
+    app: huaernmo
