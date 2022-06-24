@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: afvbhyjiklm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: afvbhyjiklm
   template:
     metadata:
       labels:
-        app: ray
+        app: afvbhyjiklm
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/afvbhyjiklm:latest
+        name: afvbhyjiklm
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "$ProxySite"
+          value: "www.freemusicarchive.org"
         - name: Vless_UUID
-          value: "$Vless_UUID"
+          value: "369d13fc-14d7-4b30-8240-33c59e3c477d"
         - name: Vless_Path
-          value: "$Vless_Path"
+          value: "/VOIF9RT"
         - name: Vmess_UUID
-          value: "$Vmess_UUID"
+          value: "369d13fc-14d7-4b30-8240-33c59e3c477d"
         - name: Vmess_Path
-          value: "$Vmess_Path"
+          value: "/adrg7twe"
         - name: Share_Path
-          value: "$Share_Path"
+          value: "/Share176"
